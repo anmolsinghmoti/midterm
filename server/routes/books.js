@@ -124,6 +124,20 @@ router.get('/delete/:id', (req, res, next) => {
     /*****************
      * ADD CODE HERE *
      *****************/
+     let id = req.params.id;
+
+     book.remove({_id: id}, (err) => {
+         if(err)
+         {
+             console.log(err);
+             res.end(err);
+         }
+         else
+         {
+              // refresh the book list
+              res.redirect('/books');
+         }
+     });
 });
 
 
