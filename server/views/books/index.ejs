@@ -15,7 +15,9 @@
               <thead>
                 <tr>
                   <th>Title</th>
+                   <th class="text-center">Description</th>
                   <th class="text-center">Price</th>
+                 
                   <th class="text-center">Author</th>
                   <th class="text-center">Genre</th>
                   <th class="text-center"></th>
@@ -28,6 +30,7 @@
               
                 <tr>
                   <td><%= books[count].Title %></td>
+                  <td class="col-4"><%=books[count].Description %></td>
                   <td class="text-center">$<%= books[count].Price %></td>
                   <td class="text-center"><%= books[count].Author %></td>
                   <td class="text-center"><%= books[count].Genre %></td>
