@@ -1,3 +1,7 @@
+/* FileName :app.js */
+/* StudentName :Anmol Singh */
+/* Student Id :301145362 */
+/* Date : 10/27/2021 */
 // modules required for routing
 let express = require('express');
 let router = express.Router();
@@ -44,6 +48,7 @@ router.post('/add', (req, res, next) => {
      *****************/
      let newBook = book({
       "Title": req.body.Title,
+      "Description":req.body.Description,
       "Price": req.body.Price,
       "Author": req.body.Author,
       "Genre":req.body.Genre
